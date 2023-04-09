@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <title> WEB UNGU KOST</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#testi">Testimoni</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="jumbotron">
+            <h1>UNGU KOST</h1>
+            <p>Selamat datang, kost terbaik Kota Malang ada disini!</p>
+            <button class="button">DAPATKAN PENAWARAN</button>
+        </div>
+        
+    </header>
+
+    <main>
+        <div id="content">
+            <article id="tentang" class="card">
+                <h2>Tentang Kami</h2>
+                    <p>Ungu Kost menyediakan sebuah jasa penyewaan kamar atau rumah yang bertempat di Jl. Kyai Parseh Jaya
+                        no 01 RT 06 RW 04 Bumiayu, Kecamatan Kedungkandang, Kota Malang. Adapun fasilitas yang disediakan :
+                    <ul>
+                        <li>Springbed + sprei + bantal + guling</li>
+                        <li>Lemari</li>
+                        <li>Led TV</li>
+                        <li>Jemuran pakaian</li>
+                        <li>Kamar mandi dalam + alat mandi</li>
+                        <li>Wifi</li>
+                        <li>Parkiran</li>
+                        <li>Ruang santai</li>
+                        <li>Dapur Bersama + Alat masak</li>
+                        <li>CCTV</li>
+                        <li>Kunci Pagar</li>
+                    </ul>
+                </p>
+            </article>
+            
+            <article id="galeri" class="card">
+                <h2>Galeri</h2>
+                <table>
+                    <tr>
+                        <td><img src="assets/image/ruangsantai.jpeg" class="featured-image" alt="galeri"></td>
+                        <td><img src="assets/image/ungukost.jpeg" class="featured-image" alt="galeri"></td>
+                        <td><img src="assets/image/dapurkost.jpeg" class="featured-image" alt="galeri"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="assets/image/ruangkamar.jpeg" class="featured-image" alt="galeri"></td>
+                        <td><img src="assets/image/tempatjemur.jpeg" class="featured-image" alt="galeri"></td>
+                        <td><img src="assets/image/notice.jpeg" class="featured-image" alt="galeri"></td>
+                    </tr>
+                </table>
+                    
+            </article>
+            
+            <article id="testi" class="card">
+                <h2>Testimoni</h2>
+                <form action="testi.php" method="GET">
+                    <p>
+                        <label>Nama :</label>
+                        <input class= "input" type="text" name="nama" placeholder="your name..." />
+                    </p>
+                    <p>
+                        <label>Ulasan :</label>
+                        <input class= "input" type="text" name="ulasan" placeholder="ulasan..." />
+                    </p>
+                    <p>
+                        <input class= "button" type="submit" name="submit" value="SEND" />
+                    </p>  
+                </form>
+
+                <div class="history card">
+                    <h2>Ulasan Kost</h2>
+                    <table class="htable">
+                        <thead>
+                            <tr>
+                                <th>Nama</th>
+                                <th>Ulasan</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyList"></tbody>
+                    </table>
+              </div>
+            </article>
+
+            <article id="kontak" class="card">
+                <h2>Kontak</h2>
+                <form action="prosess.php" method="GET">
+                        <p>
+                            <label>Name :</label>
+                            <input class= "input" type="text" name="name" placeholder="your name..." />
+                        </p>
+                        <p>
+                            <label>Subject :</label>
+                            <input class= "input" type="text" name="subject" placeholder="subject..." />
+                        </p>
+                        <p>
+                            <label>Email :</label>
+                            <input class= "input" type="email" name="email" placeholder="your email..." />
+                        </p>
+                        <p>
+                            <input class= "button" type="submit" name="submit" value="SEND" />
+                        </p>  
+                </form>
+            </article>
+        </div>
+        
+        <aside>
+            <article class="profile card">
+                <header>
+                    <h2>Biodata Diri</h2>
+                <figure>
+                    <img src="assets/image/Foto.jpg">
+                </figure>
+                </header>
+
+                <section>
+                    <h3>Informasi Lainnya</h3>
+                        <table>
+                            <tr>
+                                <th>Nama</th>
+                                <td>Lucyta Qutsyaning R</td>
+                            </tr>
+                            <tr>
+                                <th>TTL</th>
+                                <td>Malang, 27 Agustus 2003</td>
+                            </tr>
+                            <tr>
+                                <th>Jenis Kelamin</th>
+                                <td>Perempuan</td>
+                            </tr>
+                            <tr>
+                                <th>Agama</th>
+                                <td>Islam</td>
+                            </tr>
+                            <tr>
+                                <th>No Telepon</th>
+                                    <td>+62 82334235300</td>
+                                </tr>
+                        </table>
+                </section>
+                
+            </article>
+        </aside>
+        
+    </main> 
+
+    <footer>
+        <p>Alright Reserved &#169; 2022, UNGU KOST</p>
+    </footer>
+
+    
+</body>
+</html>
